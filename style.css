@@ -43,6 +43,7 @@ header {
   font-weight: bold;
   color: rgb(112, 56, 169);
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -52,11 +53,6 @@ header {
 .nav-links a {
   color: #333;
   font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: rgb(112, 56, 169);
 }
 
 /* Hero Section */
@@ -115,13 +111,7 @@ header {
   border-radius: 6px;
   text-align: center;
   width: 250px;
-  transition: transform 0.3s ease;
 }
-
-.product:hover {
-  transform: scale(1.05);
-}
-
 
 .product img {
   max-width: 100%;

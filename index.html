@@ -11,7 +11,7 @@
   <!-- Navigation Bar -->
   <header>
     <div class="container nav-container">
-      <div class="logo">Elegant Quest</div>
+      <div class="logo"><a href="#">Elegant Quest</a></div>
       <nav>
         <ul class="nav-links">
           <li><a href="#">Home</a></li>
@@ -24,14 +24,18 @@
                 <li><a href="mailto:info@elegantquest.com">✉️ Email</a></li>
               </ul>
             </li>
-
+            <!-- Cart Icon -->
+            <li>
+              <a href="cart.html" class="cart-link">
+                <img src="cart.png" alt="Cart" class="cart-icon" />
+              </a>
+            </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-
   <section class="hero">
     <div class="container hero-content">
       <div class="hero-text">
@@ -45,61 +49,108 @@
   </section>
 
   <!-- Products Section -->
-
-  <!-- Products Section -->
-
-<!-- Products Section -->
-<section class="products" id="products">
+  <section class="products" id="products">
+  <h2>Featured Products</h2>
   <div class="container">
-    <h2>Featured Products</h2>
     <div class="product-grid">
-      <div class="product">
+      <div class="product" data-product-name="Steel Water Bottle" data-product-price="500">
         <img src="bottle.png" alt="Steel Water Bottle" />
         <h3>Steel Water Bottle</h3>
+        <p class="product-price">Price: Rs. 500</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Corporate Bag" data-product-price="1500">
         <img src="laptop_bag.png" alt="Corporate Bag" />
         <h3>Corporate Bag</h3>
+        <p class="product-price">Price: Rs. 1500</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Coffee Mug" data-product-price="300">
         <img src="mug.png" alt="Coffee Mug" />
         <h3>Coffee Mug</h3>
+        <p class="product-price">Price: Rs. 300</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Branded Pen" data-product-price="100">
         <img src="pen.png" alt="Branded Pen" />
         <h3>Branded Pen</h3>
+        <p class="product-price">Price: Rs. 100</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Custom T-Shirt" data-product-price="800">
         <img src="tshirt.png" alt="Custom T-Shirt" />
         <h3>Custom T-Shirt</h3>
+        <p class="product-price">Price: Rs. 800</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Corporate Gadget" data-product-price="2000">
         <img src="mouse.png" alt="Corporate Gadget" />
         <h3>Corporate Gadget</h3>
+        <p class="product-price">Price: Rs. 2000</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Notebook" data-product-price="250">
         <img src="diary.png" alt="Notebook" />
         <h3>Notebook</h3>
+        <p class="product-price">Price: Rs. 250</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
-      <div class="product">
+      <div class="product" data-product-name="Desk Houseplant" data-product-price="400">
         <img src="houseplant.png" alt="Desk Houseplant" />
         <h3>Desk Houseplant</h3>
+        <p class="product-price">Price: Rs. 400</p>
+        <div class="quantity-selector">
+          <button class="quantity-btn" onclick="decreaseQuantity(this)">-</button>
+          <span class="quantity-value">0</span>
+          <button class="quantity-btn" onclick="increaseQuantity(this)">+</button>
+        </div>
       </div>
     </div>
   </div>
+  <div class="add-to-cart-container">
+    <button class="add-to-cart" onclick="saveCart()">Add to Cart</button>
+  </div>
 </section>
 
+  <script src="script.js"></script>
 
   <!-- Footer -->
-
   <footer>
     <div class="container footer-content">
       <div class="footer-col address">
         <h4>Registered Office</h4>
-        <p>123 Corporate Lane, Business City, IN 560001</p>
+        <p>Aditya layout, Rajarajeshwari Nagar, Bengaluru, Karnataka</p>
       </div>
       <div class="footer-col links">
-        <h4>Get to know us</h4>
+        <h4>Get to Know Us</h4>
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="#">Cities</a></li>
@@ -114,7 +165,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 | All rights reserved</p>
+      <p>&copy; 2025 Elegant Quest. All rights reserved.</p>
     </div>
   </footer>
 </body>

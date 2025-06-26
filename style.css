@@ -286,6 +286,18 @@ footer {
     margin-bottom: 1.5rem; /* Add spacing between columns */
   }
 
+  .footer-col address{
+    text-align: left;
+  }
+
+  .footer-col links{
+    text-align: left;
+  }
+
+  .footer-col social{
+    text-align: left;
+  }
+
   .footer-col ul {
     padding: 0;
   }

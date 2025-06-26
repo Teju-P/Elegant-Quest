@@ -110,7 +110,7 @@ header {
 /* Hero Section */
 .hero {
   background-color: #f4f7fb;
-  padding: 6rem 0;
+  padding: 5rem 0;
 }
 
 .hero-content {
@@ -200,14 +200,6 @@ footer {
   text-align: center;
 }
 
-.container footer-content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-}
-
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -221,6 +213,7 @@ footer {
 .footer-col {
   flex: 1 1 30%;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .footer-col h4 {
@@ -258,8 +251,7 @@ footer {
 .footer-content img {
   width: 25px; /* Restrict the maximum width */
   height: 25px; /* Maintain aspect ratio */
-  margin: 0.5rem ; /* Add spacing around images */
-  align-items: center;
+  margin: 0.5rem; /* Add spacing around images */
 }
 
 /* Responsive Design */
@@ -281,6 +273,29 @@ footer {
 
   .product-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 products per row on smaller screens */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack footer columns vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center text */
+  }
+
+  .footer-col {
+    flex: 1 1 100%; /* Make each column take full width */
+    margin-bottom: 1.5rem; /* Add spacing between columns */
+  }
+
+  .footer-col ul {
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-content img {
+    margin: 0.5rem auto; /* Center images in mobile view */
   }
 }
 
